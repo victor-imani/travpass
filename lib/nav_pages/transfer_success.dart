@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travpass/nav_pages/main_page.dart';
 
 class TransferSuccess extends StatefulWidget {
-  TransferSuccess({super.key, required this.scanResults});
+  const TransferSuccess({super.key, required this.scanResults});
   final String scanResults;
 
   @override
@@ -70,7 +70,7 @@ class _TransferSuccessState extends State<TransferSuccess> {
                       Text(
                         'Kshs. ${widget.scanResults}',
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color(0xFF1D3A6F),
                           fontSize: 30,
                           fontFamily: 'Roboto',

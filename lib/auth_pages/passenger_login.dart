@@ -56,7 +56,7 @@ class _PassengerLoginPageState extends State<PassengerLoginPage> {
               Positioned(
                 left: 0,
                 top: 0,
-                child: Container(
+                child: SizedBox(
                   width: width,
                   height: height,
                   child: Stack(
@@ -260,7 +260,7 @@ class _PassengerLoginPageState extends State<PassengerLoginPage> {
                     ? const LoadingButton()
                     : GestureDetector(
                         onTap: handleSignIn,
-                        child: Container(
+                        child: SizedBox(
                           width: 300,
                           height: 75,
                           child: Stack(

@@ -102,9 +102,8 @@ class TransactionSummary extends StatelessWidget {
                       // height: 0.09,
                     )),
                 Text(
-                    "\Kshs. " +
-                        calculateWeekTotal(value, sunday, monday, tuesday,
-                            wednesday, thursday, friday, saturday),
+                    "\Kshs. ${calculateWeekTotal(value, sunday, monday, tuesday,
+                            wednesday, thursday, friday, saturday)}",
                     style: const TextStyle(
                       color: Colors.black,
                       fontSize: 20,

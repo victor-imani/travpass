@@ -22,13 +22,9 @@ class TransactionTile extends StatelessWidget {
               fontWeight: FontWeight.w500,
               height: 0.09,
             )),
-        subtitle: Text(dateTime.day.toString() +
-            '/' +
-            dateTime.month.toString() +
-            '/' +
-            dateTime.year.toString()),
+        subtitle: Text('${dateTime.day}/${dateTime.month}/${dateTime.year}'),
         trailing: Text(
-          '\Kshs.' + amount,
+          '\Kshs.$amount',
           style: const TextStyle(
             color: Colors.black,
             fontSize: 20,

@@ -74,7 +74,7 @@ class _RegisterFirstPageState extends State<RegisterFirstPage> {
               Positioned(
                 left: 0,
                 top: 0,
-                child: Container(
+                child: SizedBox(
                   width: width,
                   height: height,
                   child: Stack(
@@ -108,7 +108,7 @@ class _RegisterFirstPageState extends State<RegisterFirstPage> {
               Positioned(
                 left: 180,
                 top: height * 0.16,
-                child: Container(
+                child: SizedBox(
                   width: 94,
                   height: 14,
                   child: Stack(
@@ -540,7 +540,7 @@ class _RegisterFirstPageState extends State<RegisterFirstPage> {
                     ? const LoadingButton()
                     : GestureDetector(
                         onTap: handleSignUp,
-                        child: Container(
+                        child: SizedBox(
                           width: 330,
                           height: 75,
                           child: Stack(

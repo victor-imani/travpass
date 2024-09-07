@@ -140,7 +140,7 @@ class _GenerateQRPageState extends State<GenerateQRPage> {
               onChanged: (value) {
                 setState(() {
                   mapString["amount"] = value;
-                  mapString["conductorID"] = '${user.id}';
+                  mapString["conductorID"] = user.id;
                   data = jsonEncode(mapString);
                 });
               },

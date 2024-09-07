@@ -33,6 +33,8 @@ class CurrentUser {
 }
 
 class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return UserProfileScreen();
@@ -40,6 +42,8 @@ class ProfilePage extends StatelessWidget {
 }
 
 class UserProfileScreen extends StatefulWidget {
+  const UserProfileScreen({super.key});
+
   @override
   _UserProfileScreenState createState() => _UserProfileScreenState();
 }

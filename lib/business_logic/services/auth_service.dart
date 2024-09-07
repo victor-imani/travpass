@@ -12,7 +12,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService extends ChangeNotifier {
   // final FlutterSecureStorage _storage;
-  SharedPreferences _prefs;
+  final SharedPreferences _prefs;
 
   bool _isLoggedIn = false;
 

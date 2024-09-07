@@ -19,7 +19,7 @@ class RegisterConductor extends StatelessWidget {
               Positioned(
                 left: 0,
                 top: 0,
-                child: Container(
+                child: SizedBox(
                   width: width,
                   height: height,
                   child: Stack(
@@ -53,7 +53,7 @@ class RegisterConductor extends StatelessWidget {
               Positioned(
                 left: 160,
                 top: 300,
-                child: Container(
+                child: SizedBox(
                   width: 94,
                   height: 14,
                   child: Stack(
@@ -212,7 +212,7 @@ class RegisterConductor extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: height - 120,
-                child: Container(
+                child: SizedBox(
                   width: 330,
                   height: 75,
                   child: Stack(

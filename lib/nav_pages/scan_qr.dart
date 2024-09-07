@@ -136,7 +136,7 @@ class _ScanQRPageState extends State<ScanQRPage> {
                                     Map<String, dynamic> body = {
                                       'conductorID': conductorID,
                                       'fareValue': amount,
-                                      'passengerID': '${user.id}',
+                                      'passengerID': user.id,
                                       'routeName': routeName,
                                     };
 
@@ -197,7 +197,7 @@ class _ScanQRPageState extends State<ScanQRPage> {
                     Positioned(
                         left: 100,
                         top: height - 200,
-                        child: Container(
+                        child: SizedBox(
                           width: 200,
                           height: 200,
                           child: Stack(
@@ -208,7 +208,7 @@ class _ScanQRPageState extends State<ScanQRPage> {
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Container(
+                                    SizedBox(
                                       width: 100,
                                       height: 100,
                                       child: IconButton(
@@ -224,7 +224,7 @@ class _ScanQRPageState extends State<ScanQRPage> {
                                                   ? Colors.blue
                                                   : Colors.grey)),
                                     ),
-                                    Container(
+                                    SizedBox(
                                       width: 100,
                                       height: 100,
                                       child: IconButton(

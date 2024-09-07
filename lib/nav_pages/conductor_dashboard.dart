@@ -75,8 +75,8 @@ class _ConductorDashboardState extends State<ConductorDashboard> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          shadows: [
-                            const BoxShadow(
+                          shadows: const [
+                            BoxShadow(
                               color: Color(0x3F000000),
                               blurRadius: 4,
                               offset: Offset(0, 4),
@@ -103,7 +103,7 @@ class _ConductorDashboardState extends State<ConductorDashboard> {
                               ),
                             ),
                             TextSpan(
-                              text: '${user.userName}',
+                              text: user.userName,
                               style: const TextStyle(
                                 color: Color(0xFFFF9F00),
                                 fontSize: 20,
@@ -267,11 +267,11 @@ class _ConductorDashboardState extends State<ConductorDashboard> {
                       top: height - 490,
                       child: Column(
                         children: [
-                          Container(
+                          SizedBox(
                             width: 430,
                             height: 300,
                             child: FutureBuilder<List<Transaction>>(
-                              future: fetchTransactions('${user.id}'),
+                              future: fetchTransactions(user.id),
                               builder: (context, snapshot) {
                                 if (snapshot.connectionState ==
                                     ConnectionState.waiting) {

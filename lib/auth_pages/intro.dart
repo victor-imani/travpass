@@ -91,7 +91,7 @@ class _IntroPageState extends State<IntroPage> {
               Positioned(
                 left: 13,
                 top: height - 400,
-                child: Container(
+                child: SizedBox(
                   width: 180,
                   height: 175,
                   child: Stack(
@@ -164,7 +164,7 @@ class _IntroPageState extends State<IntroPage> {
                                   const PassengerLoginPage())));
                     }
                   },
-                  child: Container(
+                  child: SizedBox(
                     width: 333,
                     height: 75,
                     child: Stack(

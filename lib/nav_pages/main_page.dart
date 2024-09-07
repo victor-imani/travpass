@@ -10,7 +10,7 @@ import 'package:travpass/nav_pages/scan_qr.dart';
 import 'package:travpass/nav_pages/contacts.dart';
 
 class MainPage extends StatefulWidget {
-  MainPage({required this.isConductor});
+  const MainPage({super.key, required this.isConductor});
   final bool isConductor;
 
   @override
